@@ -1,0 +1,413 @@
+@font-face {
+    font-family: Assistant;
+    src: url("../assets/fonts/Assistant-Regular.ttf");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: Assistant;
+    src: url("../assets/fonts/Assistant-SemiBold.ttf");
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: Assistant;
+    src: url("../assets/fonts/Assistant-Bold.ttf");
+    font-weight: 800;
+}
+
+html, body {
+    -webkit-user-select: none;
+    font-family: "Assistant";
+    font-weight: 100;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-color: #E8E8E8;
+}
+
+/* טוען ---------------------------------------------------------------------*/
+.loader {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0D635F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #E8E8E8;
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.loader > img {
+    width: 50vw;
+}
+
+.loader.fade {
+    animation: fadeOut 1s 2s forwards;
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+/* ניווט עליון --------------------------------------------------------------*/
+.topNavBar {
+    height: 10vh;
+    width: 100%;
+    background: #0D635F;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.topNavText {
+    color: white;
+    font-size: 1.5em;
+    font-weight: 800;
+    width: fit-content;
+}
+
+.topNavLine {
+    background-color: #E8E8E8;
+    height: 7vh;
+    width: 0.55vw;
+}
+
+.topNavLineGray {
+    background-color: rgb(158, 157, 157);
+    height: 7vh;
+    width: 0.55vw;
+}
+
+.bhdLogo {
+    height: 4vh;
+}
+
+.SearchIcon {
+    width: 5vw;
+}
+
+.topNavTextIcon {
+    width: 9vw;
+    height: 5vh;
+}
+
+.tillLogo {
+    width: 13vw;
+}
+
+.button_about, .button_menu, .button_x {
+    width: 8vw;
+}
+
+/* עמוד ראשי ----------------------------------------------------------------*/
+.mainPage {
+    position: absolute;
+    top: 10.5vh;
+    overflow-y: scroll;
+}
+
+.mainPageButton {
+    border-bottom: solid #0D635F 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+.mainPageButton.recipe {
+    border-top: solid #0D635F 2em;
+}
+
+.textImg {
+    width: 53vw;
+    padding: 1em;
+}
+
+.foodImg {
+    width: 35vw;
+    height: 15vh;
+}
+
+.textImgVideo {
+    width: 56vw;
+}
+
+.textImgGallery {
+    width: 38vw;
+    padding-left: 4em;
+}
+
+.sub-titles {
+    font-weight: bold;
+    padding-top: 0.5em;
+}
+
+/* אודות ---------------------------------------------------------------------*/
+
+.aboutPage {
+    padding: 1vh 4vw;
+    height: 80vh;
+    width: 92vw;
+    position: absolute;
+    top: 10vh;
+    font-size: 1.1em;
+    font-family: "Assistant";
+}
+
+
+.logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 5vw;
+    top: 5vh;
+}
+
+.logos > img {
+    width: 12vw;
+    padding: 0.4rem;
+}
+
+.logos :last-child {
+    width: 22vw;
+}
+
+.aboutPage .backToMain {
+    position: absolute;
+    bottom: 0vh;
+    width: 10vw;
+}
+
+/* חיפוש ---------------------------------------------------------------------*/
+.darkScreen {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.411);
+    z-index: 1;
+    top: 0;
+}
+
+.searchBox {
+    background-color: #E8E8E8;
+    top: 23vh;
+    width: 74vw;
+    height: 10vh;
+    border: none;
+    border-radius: 0.4em;
+    font-size: 1.4em;
+    font-family: "Assistant";
+    font-weight: 200;
+    padding: 0 1em;
+}
+
+.searchBox:focus{
+    outline: none;
+    top: 11vh;
+}
+
+.closeSearch {
+    position: absolute;
+    top: 7vh;
+    right: 5vw;
+    width: 12vw;
+}
+
+.searchIcon {
+    position: absolute;
+    left: 2vw;
+    width: 8vw;
+}
+
+.dropDown {
+    width: 74vw;
+    height: 52vh;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 33vh;
+    overflow-y: scroll;
+}
+
+
+.dropDown::-webkit-scrollbar {
+    display: none;
+}
+
+.dropDownItem {
+    background-color: #E8E8E8;
+    width: 74vw;
+    height: 6.5vh;
+    border-radius: 0.4em;
+    margin-top: 0.3em;
+    padding-top: 0.8em;
+    text-align: center;
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+.searchBoxContainer{
+    display: flex;
+    width: 74vw;
+    height: 10vh;
+    position: absolute;
+    top: 23vh;
+    width: 74vw;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+}
+
+/* תפריט ----------------------------------------------------------------------*/
+.menuPage {
+    position: absolute;
+    top: 10.5vh;
+    overflow-y: scroll;
+    font-weight: 800;
+    font-size: 1.7em;
+    height: 75vh;
+}
+
+.menuPage::-webkit-scrollbar {
+    display: none;
+}
+
+.menuItem {
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid rgb(158, 157, 157) 0.09em;
+}
+
+.menuContainer.recipe {
+    border-top: solid rgb(158, 157, 157) 0.09em;
+}
+
+.menuItemicon {
+    width: 8vw;
+    padding: 0.3em 0.5em;
+}
+
+.menuItemArrow {
+    height: 3vh;
+    width: 5.5vw;
+    padding: 0.3em;
+    padding-left: 1em;
+}
+
+.menuItemContainer, .menuDropDownItemContainer {
+    display: flex;
+    align-items: center;
+}
+
+.menuDropDownItemContainer {
+    background-color: rgb(194, 193, 193);
+    font-size: 1.5rem;
+    height: 8vh;
+    border-bottom: solid rgb(158, 157, 157) 0.09em;
+}
+
+.menuDropDownItemicon {
+    width: 6.5vw;
+    padding: 0.3em 0.5em;
+}
+
+.backToHome {
+    width: 6vw;
+    /* left: 64vw; */
+    /* position: absolute; */
+}
+
+/* credits */
+#credits {
+    position: absolute;
+    bottom: 0.5vh;
+    font-weight: bold;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0000ee;
+    text-decoration-line: underline;
+    text-decoration-color: #0000ee;
+    text-decoration-style: solid;
+    background-color: #e8e8e860;
+    /* text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px; */
+}
+
+#credits img{
+    width: 7vw;
+    padding-right: 0.3rem;
+}
+
+#contactUs {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contactUsText {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #E8E8E8;
+    width: 80vw;
+    padding: 1rem;
+    line-height: 1.7;
+    border-radius: 0.7rem;
+}
+
+#contactUs .sub-titles {
+    padding-top: 0;
+}
+
+
+/* כללי - חשוב שיהיה למטה --------------------------------------------------*/
+.hidden {
+    display: none;
+}
+
+.gray {
+    filter: grayscale(100);
+}
+
+/* @keyframes slideIn {
+    100% {
+         transform: translateX(0vw);
+    }
+}
+
+.recipesScrollContainer.slideInLeft {
+    transform: translateX(100vw);
+    animation: slideIn 0.5s;
+}
+
+.recipesScrollContainer.slideInRight {
+    transform: translateX(-100vw);
+    animation: slideIn 0.5s;
+} */

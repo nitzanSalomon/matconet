@@ -1,0 +1,117 @@
+/* learningPage */
+.learningScrollContainer {
+    position: absolute;
+    top: 10vh;
+    overflow-y: scroll;
+    height: 72vh;
+    width: 100vw;
+}
+
+.learningScrollContainer::-webkit-scrollbar {
+    display: none;
+}
+
+
+.learningDisplayText {
+    color: white;
+    width: 80vw;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.527);
+    font-weight: 400;
+    padding: 1vh 1vw;
+    margin: 0.5em;
+}
+
+.learningContantContainer {
+    width: 100%;
+}
+
+.learningContantTitle {
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 0.6em; 
+}
+
+.learningContant {
+    font-size: 1.2em;
+}
+
+.learningContant li, .IdParah {
+    padding: 0.3em; 
+}
+
+.idPicContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.picId {
+    width: 95vw;
+    padding: 0.6em;
+}
+
+.learningItem {
+    font-size: 1.5em;
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid rgb(158, 157, 157) 0.09em;
+    padding-right:0.2em;
+}
+
+.learningItemicon {
+    width: 8vw;
+    padding: 0.3em 0.5em;
+}
+
+.learningItemArrow {
+    height: 3vh;
+    width: 5.5vw;
+    padding: 0.3em;
+    padding-left: 1em;
+}
+
+.learningItemContainer, .menuDropDownItemContainer {
+    display: flex;
+    align-items: center;
+    padding-right: 0.4rem;
+}
+
+.learningDropDownItemicon {
+    width: 6.5vw;
+    padding: 0.3em 0.5em;
+}
+
+.learningDropDownItemContainer {
+    height: fit-content;
+    color: white;
+    width: 80vw;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.527);
+    font-weight: 400;
+    padding: 1vh 1vw;
+    margin: auto;
+    margin-top: 0.5em;
+}
+
+th, td {
+    border: black 2px solid;
+    font-size: 1rem;
+}
+
+td {
+    overflow-wrap: anywhere;
+    word-break: keep-all;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+}

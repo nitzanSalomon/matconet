@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content='מתכונים, סרטוני הדרכה ובישול, חומר לימודי ותמונות מזון.'>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <title>אפליקציית מתכונט</title>
+    <!-- stylesheet links -->
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="gallery.css">
+    <link rel="stylesheet" type="text/css" href="learning.css">
+    <link rel="stylesheet" type="text/css" href="recipe.css">
+    <link rel="stylesheet" type="text/css" href="video.css">
+    <!-- javascript links -->
+    <script type="text/javascript" src="../assets/library/swiped-events.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="content.js"></script>
+    <!-- icon -->
+    <link rel="shortcut icon" href="../assets/images/grapics/topNavBar/till_logo_black.svg">
+</head>
+<body>
+    <!-- loader -->
+    <div class="loader">
+        <img src="../assets/images/grapics/center and mask.gif" alt="Loading..." />
+        <div>על האש...</div>
+   
+    </div>
+    <!-- topNavBar -->
+    <div class="topNavBar"></div>
+    <!-- main page -->
+    <div class="mainPage">
+        <div class="mainPageButton recipe">
+            <img class="textImg" src="../assets/images/grapics/mainPage/cookbook_first.svg">
+            <img class="foodImg" src="../assets/images/grapics/mainPage/WhatsApp Image 2021-10-18 at 14.26.35 (3).jpeg">
+        </div>
+        <div class="mainPageButton learning">
+            <img class="foodImg" src="../assets/images/grapics/mainPage/WhatsApp Image 2021-10-18 at 14.26.35 (7).jpeg">
+            <img class="textImg" src="../assets/images/grapics/mainPage/learning_materials_first.svg">
+        </div>
+        <div class="mainPageButton videos">
+            <img class="textImg textImgVideo" src="../assets/images/grapics/mainPage/videos_first.svg">
+            <img class="foodImg" src="../assets/images/grapics/mainPage/WhatsApp Image 2021-10-18 at 14.30.04 (1).jpeg">
+        </div>
+        <div class="mainPageButton gallery">
+            <img class="foodImg" src="../assets/images/grapics/mainPage/WhatsApp Image 2021-10-18 at 16.58.46.jpeg">
+            <img class="textImg textImgGallery" src="../assets/images/grapics/mainPage/gallery_first.svg">
+        </div>
+    </div>
+    <!-- about push-->
+    <div class="aboutPage hidden">
+        <div class="sub-titles">מומחה תוכן</div>
+        <div>רנ"ג/שף אדיר לוגסי</div>
+        <div class="sub-titles">פיתוח</div>
+        <div>סמל ניצן סלומון</div>
+        <div class="sub-titles">עיצוב</div>
+        <div>סמל לוטם גרוס</div>
+        <div class="sub-titles">רת"ח מו"פ וחדשנות בלמידה</div>
+        <div>סמ"ר גל גנסין, סמ"ר אופק בצון</div>
+        <div class="sub-titles"> רמ"ד טי"ל</div>
+        <div> רס"ם שלומי אוגרן</div>
+        <div class="sub-titles">מסגרת הכשרה</div>
+        <div>אומנות הבישול-הכשרה קולינרית בה"ד 6</div>
+        <div class="sub-titles">גרסה</div>
+        <div>ינואר 2023</div>
+        <div class="sub-titles">צור קשר:</div>
+        <div>
+            מייל: <a href="mailto:madortill@gmail.com">madortill@gmail.com</a>
+        </div>
+        <div>
+            טלפון שלומי אוגרן: <a href="tel:052-5364232">052-5364232</a>
+        </div>
+        <div>
+            טלפון אביב אואנונו: <a href="tel:052-8394566">052-8394566</a>
+        </div>
+        <div class="logos">
+            <img src="../assets/images/grapics/topNavBar/בהד 6.png"/>
+            <img src="../assets/images/grapics/topNavBar/till_logo_text_black.svg"/>
+        </div>
+        <img class="backToMain main" src="../assets/images/grapics/general/right_arrow.svg">
+    </div>
+    <!-- search -->
+    <div class="searchScreen darkScreen hidden">
+        <div class="searchBoxContainer">
+            <input  class="searchBox" placeholder="חיפוש מתכון" name="name" lang="en-US" type="text" />
+            <img class="searchIcon" src="../assets/images/grapics/topNavBar/green_search.svg">
+        </div>
+        <img class="closeSearch" src="../assets/images/grapics/general/x_with_round_background.svg">
+        <div class="dropDown"></div>
+    </div>
+    <!-- menu page -->
+    <div class="menuPage hidden"></div>
+    <!-- recipe page -->
+    <div class="recipePage hidden">
+        <div class="recipesScrollContainer"></div>
+        <div class="bottomNavBar"></div>
+    </div>
+    <!-- gallery page -->
+    <div class="galleryPage hidden">
+        <div class="galleryScrollContainer"></div>
+        <div class="darkScreen hidden"></div>
+        <div class="galleryPicDisplay hidden"></div>
+        <div class="bottomNavBar"></div>
+        
+    </div>
+    <!-- video page -->
+    <div class="videosPage hidden">
+        <div class="videosScrollContainer"></div>
+        <div class="bottomNavBar"></div>
+    </div>
+    <!-- learning page -->
+    <div class="learningPage hidden">
+        <div class="learningScrollContainer"></div>
+        <div class="bottomNavBar"></div>
+    </div>
+    <!-- credits -->
+    <div id="credits">
+         פותח על ידי מדור טי"ל
+        <img src="../assets/images/grapics/topNavBar/till_logo_blue.svg"/> 
+    </div>
+    <!-- contact us -->
+    <div id="contactUs" class="hidden">
+        <div class="contactUsText">
+            <div class="sub-titles">אהבתם את התוצר? מעוניינים בתוצר טי"ל?<br> צרו איתנו קשר:</div>
+            <div>
+                מייל: <a href="mailto:madortill@gmail.com">madortill@gmail.com</a>
+            </div>
+            <div>
+                טלפון שלומי אוגרן: <a href="tel:052-5364232">052-5364232</a>
+            </div>
+            <div>
+                טלפון אביב אואנונו: <a href="tel:052-8394566">052-8394566</a>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
